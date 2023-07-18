@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Caprasimo&family=Jost:ital,wght@0,200;0,300;0,400;0,500;1,200&family=Lexend&family=Plus+Jakarta+Sans:wght@200;400;500&family=Poppins:ital,wght@0,400;0,600;1,600&family=Public+Sans&family=Roboto+Slab:wght@400;500&family=Rubik&family=Unbounded:wght@200;300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lexend, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue";
+}
+.container_fluid{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(250, 250, 250);
+}
+.container{
+    padding: 40px 40px 30px 40px;
+}
+form{
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+    width: 450px;
+}
+.logo{
+    margin-bottom: 30px;
+}
+.welcome_paragraph{
+    line-height: 1.5; 
+    font-size: 18px;
+    font-weight: 600;
+}
+.form_container label{
+     padding-bottom:5px;
+     line-height: 1.5;
+    font-size: 13px;
+    font-weight: 500;
+}
+.email_container input{
+  padding: 11px 14px;
+  width: 100%;
+  border-radius: 6px;
+  outline: none;
+  border: 1px solid #ddd;
+}
+.password_paragraph_Align{
+    display: flex;
+    justify-content: space-between;
+}
+.password_paragraph_Align p a{
+    color: rgb(46, 168, 113);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+}
+.password_container input{
+    padding: 12px 14px;
+    width: 100%;
+    outline: none;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+.email_container input::placeholder{
+    color: #b9b7b7;
+}
+.password_container input::placeholder{
+    color: #b9b7b7;
+}
+.email_container input:focus{
+    border: 1px solid rgb(51, 188, 126);
+}
+.password_container input:focus{
+    border: 1px solid rgb(51, 188, 126);
+}
+.error {
+    color: red;
+    padding-top: 10px;
+    line-height: 1.5;
+    font-size: 13px;
+    font-weight: 500;
+  }
+.error_border_email{
+    border: 1px solid red!important;
+}
+.error_border_password{
+    border: 1px solid red!important;
+}
+.email_container{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 0 0;
+}
+.password_container{
+    padding: 10px 0 15px 0;
+}
+.password_hide_show{
+    position: relative;
+}
+.showPassword{
+    position: absolute;
+    top: 12px;
+    right: 13px;
+    cursor: pointer;
+}
+.showPassword i{
+    opacity: 0.4;
+}
+.checkbox_container{
+    display: flex;
+}
+.checkbox_container input{
+    width: 15px;
+    cursor: pointer;
+    accent-color:green!important;
+}
+.checkbox_container p{
+    padding: 0 7px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.signIn_button{
+    padding: 9px 16px;
+    border: none;
+    background: rgb(51, 188, 126);
+    color: #fff;
+    border-radius: 8px;
+    margin-top:30px;
+    font-weight: 500;
+    font-size: 13px;
+    cursor: pointer;
+}
+.signIn_button:hover{
+    background: rgb(26, 159, 99);
+    transition: 0.5s;
+}
+.signUp{
+    display: flex;
+    border-top: 1px solid #ddd;
+    padding: 15px 20px;
+    background: #fff;
+    border-radius: 0 0 8px 8px;
+    line-height: 1.5;
+    font-size: 13px;
+    font-weight: 500;
+}
+.signUp p a{
+    text-decoration: none;
+    color:rgb(46, 168, 113) ;
+    margin: 0 5px;
+    line-height: 1.5;
+    font-size: 13px;
+    font-weight: 500;
+}

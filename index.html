@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TWOZO FORM</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container_fluid">
+      
+     <form onsubmit=validateForm(event)>
+        <div class="container">
+            <div class="logo">
+                <img src="./css/image/download.png" alt="">
+            </div>
+
+            <div class="form_container">
+                <p class="welcome_paragraph">Welcome Back!</p>
+
+                <div class="email_container">
+                    <label for="">Work Email Id</label>
+                    <input type="text" placeholder="Enter Your Work email id" id="emailInput" required>
+                    <p id="errorEmail" class="error" ></p>
+                </div>
+
+                <div class="password_container">
+                     <div class="password_paragraph_Align">
+                         <label for="">Password</label>
+                         <p><a href="">Forget Password?</a></p>
+                     </div>
+                     <div class="password_hide_show">
+                        <input type="password" placeholder="Enter password" id="passwordInput"  required>
+                        <p id="errorPassowrd" class="error" ></p>
+                        <div class="showPassword">
+                             <i class="fa-sharp fa-regular fa-eye" id="togglePassword" onclick=togglePasswordVisibility()></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="checkbox_container">
+                    <input type="checkbox" ><p>Remember Me</p>
+                </div>
+
+                <div>
+                    <button class="signIn_button" type="submit">Sign In</button>
+                </div>
+            </div>
+        </div>
+
+        <div  class="signUp">
+            <p>Don’t have Twozo account?</p>
+            <p><a href="">Sign Up</a></p>
+        </div>
+     </form>
+      
+    </div>
+    <script src="./css/script.js"></script>
+</body>
+</html>
